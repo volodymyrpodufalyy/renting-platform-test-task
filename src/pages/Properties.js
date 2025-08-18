@@ -4,10 +4,10 @@ import { Button, Card, Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import CountDown from "../components/functions/CountDown";
 // import framer motion
 import { motion } from "framer-motion";
@@ -160,7 +160,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded selected-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
