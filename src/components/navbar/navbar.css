@@ -103,21 +103,7 @@ html[data-theme="light"] .navbar-brand .logo {
   filter: invert(1) hue-rotate(180deg) saturate(0.8) contrast(1.1);
 }
 
-/* Theme toggle */
-.theme-toggle {
-  border: 1px solid var(--border);
-  background-color: transparent;
-  color: var(--text);
-  padding: 6px 10px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-.theme-toggle:hover {
-  background-color: rgba(0,0,0,0.06);
-}
+
 
 .navbar-brand .logo {
   max-height: 24px;

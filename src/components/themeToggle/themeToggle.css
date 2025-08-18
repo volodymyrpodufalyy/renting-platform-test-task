@@ -1,0 +1,17 @@
+/* Theme toggle */
+.theme-toggle {
+  border: 1px solid var(--border);
+  background-color: transparent;
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin-left: 12px;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0,0,0,0.06);
+}

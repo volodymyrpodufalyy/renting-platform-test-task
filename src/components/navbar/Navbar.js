@@ -3,13 +3,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../images/logo/logo.png";
-import { useTheme } from "../../providers/ThemeProvider";
+import ThemeToggle from "../themeToggle/index";
 import WalletConnect from "../walletConnect/index";
 import "./navbar.css";
 
 function NavBar() {
-  const { theme, toggleTheme } = useTheme();
-
   return (
     <Navbar expand="lg" className="py-3">
       <Container>
@@ -30,19 +28,7 @@ function NavBar() {
         <div className="d-flex align-items-center order">
           <span className="line d-lg-inline-block d-none"></span>
           <i className="fa-regular fa-heart"></i>
-          <button
-            type="button"
-            aria-pressed={theme === "dark"}
-            aria-label="Toggle dark and light theme"
-            className="theme-toggle ms-3"
-            onClick={toggleTheme}
-          >
-          {theme === "light" ? (
-            <i className="fa-solid fa-moon" />
-          ) : (
-            <i className="fa-solid fa-sun" />
-          )}
-          </button>
+          <ThemeToggle />
         </div>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
